@@ -138,9 +138,9 @@
             gap: 0.5rem;
         }
         
-        .action-button svg {
-            width: 24px;
-            height: 24px;
+        .action-button img {
+            width: 48px;
+            height: 48px;
             fill: currentColor;
         }
 
@@ -211,27 +211,27 @@
 
         <div class="button-container">
             <button class="action-button" data-action="sleep">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.88c-.6-.6-.6-1.56 0-2.16s1.56-.6 2.16 0L12 15.84l1.76-1.76c.6-.6 1.56-.6 2.16 0s.6 1.56 0 2.16L14.16 18l1.76 1.76c.6.6.6 1.56 0 2.16s-1.56.6-2.16 0L12 20.16l-1.76 1.76c-.6.6-1.56.6-2.16 0s-.6-1.56 0-2.16L9.84 18l-1.76-1.76z"/></svg>
+                <img src="./images/sleep.png" alt="Sleep Icon">
                 <span>Sleep</span>
             </button>
             <button class="action-button" data-action="eat">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2-2h4v2h-4zM8 9h8V7h-8z"/></svg>
+                <img src="./images/food.png" alt="Food Icon">
                 <span>Feed</span>
             </button>
             <button class="action-button" data-action="drink">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-2-12h4v2h-4zM8 9h8V7h-8z"/></svg>
+                <img src="./images/boba.png" alt="Boba Icon">
                 <span>Boba</span>
             </button>
             <button class="action-button" data-action="bath">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.88c-.6-.6-.6-1.56 0-2.16s1.56-.6 2.16 0L12 15.84l1.76-1.76c.6-.6 1.56-.6 2.16 0s.6 1.56 0 2.16L14.16 18l1.76 1.76c.6.6.6 1.56 0 2.16s-1.56.6-2.16 0L12 20.16l-1.76 1.76c-.6.6-1.56.6-2.16 0s-.6-1.56 0-2.16L9.84 18l-1.76-1.76z"/></svg>
+                <img src="./images/soap.png" alt="Soap Icon">
                 <span>Bathe</span>
             </button>
             <button class="action-button" data-action="confused">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.88c-.6-.6-.6-1.56 0-2.16s1.56-.6 2.16 0L12 15.84l1.76-1.76c.6-.6 1.56-.6 2.16 0s.6 1.56 0 2.16L14.16 18l1.76 1.76c.6.6.6 1.56 0 2.16s-1.56.6-2.16 0L12 20.16l-1.76 1.76c-.6.6-1.56.6-2.16 0s-.6-1.56 0-2.16L9.84 18l-1.76-1.76z"/></svg>
+                <img src="./images/bread.png" alt="Bread Icon">
                 <span>Confuse</span>
             </button>
             <button class="action-button" data-action="poke">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1.92 14.88c-.6-.6-.6-1.56 0-2.16s1.56-.6 2.16 0L12 15.84l1.76-1.76c.6-.6 1.56-.6 2.16 0s.6 1.56 0 2.16L14.16 18l1.76 1.76c.6.6.6 1.56 0 2.16s-1.56.6-2.16 0L12 20.16l-1.76 1.76c-.6.6-1.56.6-2.16 0s-.6-1.56 0-2.16L9.84 18l-1.76-1.76z"/></svg>
+                <img src="./images/poke.png" alt="Poke Icon">
                 <span>Poke</span>
             </button>
         </div>
@@ -247,24 +247,23 @@
             const buttons = document.querySelectorAll('.action-button');
 
             // --- USER IMAGES ---
-            // IMPORTANT:
             // The file paths are now relative to the index.html file.
             // Ensure your images folder is in the same directory as index.html.
             const images = {
-                // `sleep` is the base image. Name: sleeping.png
-                sleep: './images/sleeping.png',
+                // `sleep` is the base image. Name: sleep.png
+                sleep: './images/sleep.png',
                 // `eat` is the feeding image. Name: eating.png
-                eat: './images/eating.png',
-                // `drink` is the happy drinking boba image. Name: happy-drinking-boba.png
-                drink: './images/happy-drinking-boba.png',
-                // `bath` is the taking a bath image. Name: taking-a-bath.png
-                bath: './images/taking-a-bath.png',
-                // `confused` is the wearing a bread hat image. Name: wearing-bread-hat-confused.png
-                confused: './images/wearing-bread-hat-confused.png',
-                // `angry` is the holding a knife image. Name: holding-a-knife-angry.png
-                angry: './images/holding-a-knife-angry.png',
-                // `pokeHand` is the hand for the animation. Name: poke-hand.png
-                pokeHand: './images/poke-hand.png',
+                eat: './images/eat.png',
+                // `drink` is the happy drinking boba image. Name: drink.png
+                drink: './images/drink.png',
+                // `bath` is the taking a bath image. Name: bath.png
+                bath: './images/bath.png',
+                // `confused` is the wearing a bread hat image. Name: confused.png
+                confused: './images/confused.png',
+                // `angry` is the holding a knife image. Name: angry.png
+                angry: './images/angry.png',
+                // `pokeHand` is the hand for the animation. Name: poke.png
+                pokeHand: './images/poke.png',
             };
 
             let stats = {
@@ -373,4 +372,3 @@
 
 </body>
 </html>
-
