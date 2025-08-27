@@ -1,4 +1,4 @@
 # Enjoy this Capybara Pet Game!
 ### Inspired by Tamagotchi, deployed to https://github.com/natgluons/capybara-game
 
-<img width="846" height="848" alt="image" src="https://github.com/user-attachments/assets/f2afbdcb-1999-4ac4-912b-454d461cd6ef" />
+<img width="846" height="848" alt="image" src="https://github.com/user-attachments/assets/ec0c87de-927e-4861-a0b3-fbac9e9e791a" />
